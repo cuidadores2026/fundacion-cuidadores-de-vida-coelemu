@@ -5,7 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Fundación Cuidadores de Vida Coelemu - acompañamiento, orientación y apoyo a personas cuidadoras.">
 <title>Fundación Cuidadores de Vida Coelemu</title>
-<style>
+.boton-galeria {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--turquesa); /* Usa tu color turquesa */
+    color: var(--blanco); /* Usa tu color blanco */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: var(--sombra); /* Usa tu sombra predefinida */
+    transition: background-color 0.3s ease;
+    margin: 20px 0;
+}
+
+.boton-galeria:hover {
+    background-color: var(--turquesa-oscuro); /* Cambia al turquesa oscuro al pasar el ratón */
+}<style>
 :root {
   --turquesa:#149b9b;
   --turquesa-oscuro:#087b7b;
@@ -229,7 +244,10 @@ footer { background:#123d3d; color:#d9eeee; text-align:center; padding:25px 20px
     </div>
   </div>
 </section>
-
+<section id="galeria" style="text-align: center; padding: 40px 0;">
+    <h2>Nuestra Galería de Fotos</h2>
+    <a href="#galeria" class="boton-galeria">Ver Galería de Fotos</a>
+</section>
 <section class="contact" id="contacto">
   <div class="container">
     <div class="section-title">
@@ -250,6 +268,5 @@ footer { background:#123d3d; color:#d9eeee; text-align:center; padding:25px 20px
 <footer>
   <p>© 2026 Fundación Cuidadores de Vida Coelemu · Todos los derechos reservados.</p>
 </footer>
-
 </body>
 </html>
