@@ -22,6 +22,29 @@
 .boton-galeria:hover {
     background-color: var(--turquesa-oscuro);
 }
+  .contenedor-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.foto-galeria {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: var(--sombra);
+    transition: transform 0.3s ease;
+}
+
+.foto-galeria:hover {
+    transform: scale(1.05);
+}
+
+    
 :root {
   --turquesa:#149b9b;
   --turquesa-oscuro:#087b7b;
@@ -245,9 +268,13 @@ footer { background:#123d3d; color:#d9eeee; text-align:center; padding:25px 20px
     </div>
   </div>
 </section>
-<section id="galeria" style="text-align: center; padding: 40px 0;">
-    <h2>Nuestra Galería de Fotos</h2>
-    <a href="#galeria" class="boton-galeria">Ver Galería de Fotos</a>
+
+
+ 
+        <img class="foto-galeria" src="https://picsum.photos" alt="Actividad de la Fundación">
+        <img class="foto-galeria" src="https://picsum.photos" alt="Reunión de cuidadores">
+        <img class="foto-galeria" src="https://picsum.photos" alt="Talleres comunitarios">
+    </div>
 </section>
 <section class="contact" id="contacto">
   <div class="container">
