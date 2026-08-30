@@ -288,3 +288,12 @@ footer { background:#123d3d; color:#d9eeee; text-align:center; padding:25px 20px
 
     </div>
 </section>
+<script>
+    // Este código copia automáticamente el logo que ya funciona arriba y lo pone en tu portada
+    window.onload = function() {
+        var logoOriginal = document.querySelector('.images-card img') || document.querySelector('.logo-card img') || document.querySelector('img[src^="data:image"]');
+        if(logoOriginal) {
+            document.getElementById('logo-portada').src = logoOriginal.src;
+        }
+    }
+</script>
